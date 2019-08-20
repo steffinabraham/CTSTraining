@@ -1,2 +1,2 @@
-# steffincts
+# CTSTraining
 IIHT Assignment
