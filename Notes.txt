@@ -1,0 +1,14 @@
+23-08-2019
+
+[MODULE EXPORTS]
+
+>   u can directly require an array
+[
+    console.log(require('./array'));
+]
+
+
+>   when usign multiline string to export use ` <string> `
+
+>   
+
