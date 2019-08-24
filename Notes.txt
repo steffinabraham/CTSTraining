@@ -50,3 +50,11 @@ cd
     uncaught expception should be caught 
 
 =>
+     while importing u need to be carefull about the 
+     placing of the import statement 
+
+=>
+    .filter 
+        to filter and give condition
+    .repeat
+        to print multiple times
