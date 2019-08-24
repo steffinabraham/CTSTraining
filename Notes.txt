@@ -10,5 +10,43 @@
 
 >   when usign multiline string to export use ` <string> `
 
->   
+>   to print something that u wante inside a function check out function.js
 
+=>
+   to see global variable with depth of 1 [dir.js]
+    //
+     console.dir(global, {depth: 1})
+    //
+
+    Q: How did we get setInterval?
+
+
+=>  
+    throwing of error is learned in throw.js
+    allways use try catch NEVER write code without it 
+
+
+=>
+     the function shud have async and await 
+
+cd
+=>
+
+    setting a view engine 
+
+
+
+    ---------------[ 24-08-2019 ]---------------
+
+    => 
+        npm install //for installing dependencies
+
+    =>
+=>
+    step 1 : node --inspect-brk
+    step 2 : chrome://inspect     
+
+=>
+    uncaught expception should be caught 
+
+=>
