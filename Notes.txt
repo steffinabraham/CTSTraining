@@ -58,3 +58,14 @@ cd
         to filter and give condition
     .repeat
         to print multiple times
+
+
+
+--------------------------------26-08-19-----------------------------------
+
+Setting up a Project.
+
+=> 
+    > npm init 
+    > npm install express -save
+    
