@@ -68,4 +68,13 @@ Setting up a Project.
 => 
     > npm init 
     > npm install express -save
-    
+    > create app.js
+
+    // lets create an application for express
+
+    > npx express-generator  // express file
+    > npm install // to install node-modules
+
+=> 
+    views 
+
