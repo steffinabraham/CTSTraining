@@ -76,5 +76,55 @@ Setting up a Project.
     > npm install // to install node-modules
 
 => 
-    views 
+    dev will show all the 
+    production will show only the important
 
+
+    inside app.js
+    [app.use(logger('dev));]
+
+
+-----------------------------------27-08-19[Tuesday]------------------------------
+
+=>
+    HOW TO CREATE PUG ENGINE 
+
+    > CREATE A FOLDER
+    > NPM init
+    > npm install -g express-generator
+    > express --view = pug //inside that FOLDER
+    > npm install //installs all the packages
+    > npm start
+
+
+
+===========================[30-Aug-19]==================
+
+
+TESTING
+
+
+npm init
+npm install -g mocha
+mocha -version
+npm install --save mocha
+npm install --save chai
+npm install --save chai-as-promised
+npm install --save sinon
+
+
+=>
+    create a folder and inside it starting.spec.js
+
+    var assert = require('assert');
+    describe('basic Mocha Test', function(){
+    it ('should throw errors', function(){
+        
+    })
+})
+
+=> 
+    always show what was ur error by either using a console.log();
+
+=>
+    ".\test\**\*.spec.js    
