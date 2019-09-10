@@ -1,0 +1,82 @@
+
+
+.title
+{
+    font-family:verdana;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: white;
+    text-emphasis-style: inherit;
+    font-weight: 100;
+    text-shadow: 0 0 20px rgb(0, 0, 0), 0 0 100px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    float: center;
+    margin: auto;
+    margin-top: 0.3%;
+    height: 100%;
+    width: 100%;
+     
+}
+  
+.move 
+  {
+   
+    padding-left: 20%;
+    
+  }
+
+.btn-primary
+{
+  width: auto;
+  
+}
+
+.avatar
+{
+  width : 2%;
+  
+}
+  
+/* .student::after 
+  {
+    float: left;
+    width: 75%;
+    padding: 2px;
+    margin-left: 30%;
+    margin-right: 75%;
+    display: table;
+  } */
+
+body 
+    {
+        background-image: url("./Assets/home.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+/* NAVBAR */
+
+          ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+          }
+          
+          li {
+            float: left;
+          }
+          
+          li a {
+            font-family:verdana;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          
+          li a:hover {
+            background-color: rgb(247, 171, 73);
+          }

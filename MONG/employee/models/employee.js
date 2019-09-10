@@ -8,4 +8,5 @@ const employeeSchema=new mongoose.Schema({
     createdOn:{type:Date,default:Date.now}
 
 })
-module.exports=mongoose.model('Employee',employeeSchema) 
+module.exports=mongoose.model('Employee',employeeSchema)
+
