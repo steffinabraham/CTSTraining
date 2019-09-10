@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="../Assignments/home.html">Home</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <!-- <div class="search">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="Search.." name="search">
+                      <button type="submit"><i class="searchbutton"></i></button>
+                    </form>
+            </div> -->
+            
+        </ul>
+
+        
+    </nav>
+
+    
+
+    <div class= "title">
+            <h1> LEARN-ERA</h1>
+    </div>
+
+
+    
+    <!-- <div class= "buttons">
+        <form action="document.getElementById('id01')" >
+            <form onclick ="document.getElementById('id01')">
+            <input type="image" src="./Assets/teacher.png" alt="Teacher" width="25%" height="25%" >
+            <input type="image" src="./Assets/student.png" alt="Student" width="25%" height="25%" class="student">
+        </form>
+    </div>
+    <div class= "student">
+        <form>
+
+            <input type="image" src="./Assets/student.png" alt="Submit" width="25%" height="25%" >
+        </form>
+    </div> -->
+
+    <div class="move">
+            <table >
+                <tr><td><div class="button">
+                <form action="tsignin.html">
+                    <input type="image" alt="Trainer" src="./Assets/teacher.png" width="50%">
+                </form></td>
+                <td><form action="lsignin.html">
+                    <input type="image" alt="Student" src="./Assets/student.png" width="50%">
+                </form></td>
+    
+                </div>
+                </tr>
+                <tr><td>
+                <div class="button">
+                    <button type="button" class="btn-primary" onclick="document.getElementById('id01').style.display='block'" >Trainer</button>
+                </div>
+              </td>
+                <td><div class="button">
+                     <button type="button" class="btn-primary" onclick="document.getElementById('id01').style.display='block'">Learner</button>
+               </td>
+            
+                </div>
+            </div></tr>
+        </table>
+      </div>
+    
+    <!-- ========================================================================================================= -->
+
+     
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./user_signin.css">
+        
+    </head>
+        <body>
+        
+        <!-- <h2>Modal Login Form</h2>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
+        
+        <div id="id01" class="modal">
+          
+          <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="./Assets/student.png"  alt="Avatar" class="avatar" >
+            </div>
+        
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+                
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+        
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+        
+        <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+        })
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+</body>
+</html>
