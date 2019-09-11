@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+  <title>User Login</title>
+
+  <!-- Font Awesome Icons -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="css/creative.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/script.js"></script>
+  
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html">Mentor On Demand</a>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead">
+    
+        <div class="modal-dialog text-center">
+            <div class="col-sm-9 main-section">
+                <div class="modal-content">
+                    <h3>User Login</h3>
+                    <div class="col-12 form-input">
+                        <form name="userForm" action="user.html" onsubmit="return loginUser()">
+                            <div class="form-group">
+                                <!-- <span style="font-size: 19px;font-weight:bold">Email:</span> -->
+                                <input type="email" class="form-control" name="email" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                              <!-- <span style="font-size: 19px;font-weight:bold">Password:</span> -->
+                                <input type="password" class="form-control" name="password" placeholder="Enter password">
+                            </div>
+                            <button type="submit" class="btn btn-success">Login</button>
+                        </form>
+                    </div>
+                    <div class="col-12 forgot">
+                        <a href="#">Forgot Password</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <footer class="bg-light py-3">
+        <div class="container">
+          <div class="small text-center text-muted">Copyright &copy; 2019 - Mentor On Demand</div>
+        </div>
+      </footer>
+  </body>
+  </html>

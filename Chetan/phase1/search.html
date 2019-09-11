@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Search</title>
+
+  <!-- Font Awesome Icons -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="css/creative.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html">Mentor On Demand</a>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead">
+
+    <section id="courses" class="search-sec" style="margin-left: 150px; margin-top:18px">
+
+      <div class="container">
+          <form action="search.html" method="post" novalidate="novalidate">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div class="row">
+                          <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                              <input type="text" size="50" class="form-control search-slt" placeholder="Enter Technology" >
+                          </div>
+                           
+                            <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                              <select class="form-control search-slt" id="exampleFormControlSelect1">
+                                  <option size="50">Select Time Slot</option>
+                                  <option>4pm-6pm</option>
+                                  <option>6pm-8pm</option>
+                                  <option>7pm-9pm</option>                                  
+                              </select>
+                          </div>
+                          <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                              <button type="submit" class="btn wrn-btn" style="background-color: orangered;color: white">Search</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </form>
+      </div>
+
+    </section>     
+
+      <div class="container mt-3">
+  
+        <div class="media border p-3" style="background-color: #ffe6e6">
+        
+          <img class="align-self-center mr-3 mt-2 rounded-circle" src="img/trainer.png" alt="John Doe" style="width:60px;">
+          <span class="col-md-2 pt-3"><strong>John Doe</strong></span>
+          <span class="col-md-2 pt-3"><strong>Avg Rating : 4 </strong></span>
+          <span class="col-md-3 pt-3"><strong>No. of trainings completed : 8</strong></span>
+          <button type="button" class="btn col-md-2 pt-2" style="margin-top: 15px; background-color: orangered;color: white" data-toggle="modal" data-target="#myModal1">View Profile</button>
+          <button type="button" class="btn col-md-2 pt-2" style="margin-top: 15px;margin-left:5px;background-color: orangered;color: white" data-toggle="modal" data-target="#myModal">Propose Training</button>
+        </div>
+        
+        <br>
+        <div class="media border p-3" style="background-color: #ffe6e6">
+        
+            <img class="align-self-center mr-3 mt-2 rounded-circle" src="img/trainer.png" alt="John Doe" style="width:60px;">
+            <span class="col-md-2 pt-3"><strong>Steven Crain</strong></span>
+            <span class="col-md-2 pt-3"><strong>Avg Rating : 4.7 </strong></span>
+            <span class="col-md-3 pt-3"><strong>No. of trainings completed : 15</strong></span>
+            <button type="button" class="btn col-md-2 pt-2" style="margin-top: 15px;background-color: orangered;color: white" data-toggle="modal" data-target="#myModal1">View Profile</button>
+          <button type="button" class="btn col-md-2 pt-2" style="margin-top: 15px;margin-left:5px;background-color: orangered;color: white" data-toggle="modal" data-target="#myModal">Propose Training</button>
+        </div>
+
+          <br>
+          <div class="media border p-3" style="background-color: #ffe6e6">
+        
+              <img class="align-self-center mr-3 mt-2 rounded-circle" src="img/trainer.png" alt="John Doe" style="width:60px;">
+              <span class="col-md-2 pt-3"><strong>Theodara John</strong></span>
+              <span class="col-md-2 pt-3"><strong>Avg Rating : 4.3 </strong></span>
+              <span class="col-md-3 pt-3"><strong>No. of trainings completed : 11</strong></span>
+              <button type="button" class="btn col-md-2 pt-2" style="margin-top: 15px;background-color: orangered;color: white" data-toggle="modal" data-target="#myModal1">View Profile</button>
+          <button type="button" class="btn col-md-2 pt-2" style="margin-top: 15px;margin-left:5px;background-color: orangered;color: white" data-toggle="modal" data-target="#myModal">Propose Training</button>
+        </div>
+
+            <br><div class="media border p-3" style="background-color: #ffe6e6">
+        
+                <img class="align-self-center mr-3 mt-2 rounded-circle" src="img/trainer.png" alt="John Doe" style="width:60px;">
+                <span class="col-md-2 pt-3"><strong>Ken Thomas</strong></span>
+                <span class="col-md-2 pt-3"><strong>Avg Rating : 4.8 </strong></span>
+                <span class="col-md-3 pt-3"><strong>No. of trainings completed : 18</strong></span>
+                <button type="button" class="btn col-md-2 pt-2" style="margin-top: 15px;background-color: orangered;color: white" data-toggle="modal" data-target="#myModal1">View Profile</button>
+                <button type="button" class="btn col-md-2 pt-2" style="margin-top: 15px;margin-left:5px;background-color: orangered;color: white" data-toggle="modal" data-target="#myModal">Propose Training</button>
+              </div>
+
+      </div>        
+      
+      <div class="modal" id="myModal">
+        <div class="modal-dialog" style="background-color: #ffe6e6">
+          <div class="modal-content">
+        
+            <div class="modal-body align-self-center" style="color: #ffe6e6">
+              Proposal sent to Mentor
+            </div>
+            
+            <div class="align-self-center" style="padding-top: 10px;padding-bottom: 10px">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="myModal1">
+        <div class="modal-dialog" style="background-color: #ffe6e6">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header text-center" style="color: #ffe6e6">
+              <h4 class="modal-title">Trainer Profile</h4>
+              <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body text-center" style="color: #ffe6e6">
+             Trainer Name: John Doe <br>
+             Age: 30<br>
+             No. of Trainings: 8<br>
+             Avg. Rating: 4
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+  
+  </header>
+  <footer class="bg-light py-3">
+      <div class="container">
+        <div class="small text-center text-muted">Copyright &copy; 2019 - Mentor On Demand</div>
+      </div>
+    </footer>
+</body>
+</html>
