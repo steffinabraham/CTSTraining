@@ -49,7 +49,7 @@
 
 body 
     {
-        background-image: url("./Assets/home.jpg");
+        background-image: url("../Assets/home.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
