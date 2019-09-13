@@ -3,12 +3,12 @@
  <head>
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
  <title>LEARN-ERA</title>
- <link rel="stylesheet" href="./css/index.css"/>
+ <link rel="stylesheet" href="./css/styles.css"/>
  <script type="text/javascript" src="./js/jquery.js"></script>
  <link href="http://fonts.googleapis.com/css?family=Oswald" type='text/css'>
 
  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
- <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'> 
+ <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
  <link href="http://fonts.googleapis.com/css?family=Oswald" rel='stylesheet' type='text/css'>
  <script>
@@ -16,36 +16,65 @@
 </head>
 
 <body>
-    <!----- HEADER START---> 
-
+    <!----- HEADER START--->
 
 
     <header id="header">
-    <div class="content">
-    <div id="logo"><a href=""> LEARN-ERA</a></div>
-    <nav id="nav">
-     <ul>
-               <li><a href="#slide1" class="active" title="Next Section" >Slide 1</a></li>
-               <li><a href="#slide2" title="Next Section">About us</a></li>
-               <li><a href="#slide3" title="Next Section"> Contact</a></li>
-               <li><a href="#slide4" title="Next Section">Course</a></li>
-               <li><a href="#slide5" title="Next Section">Slide 5</a></li>
-               </ul>
-   </nav>
-   </div>
+      <div class="container-fluid">
+  
+        <div id="logo" class="pull-left">
+          <h1><a href="#intro" class="scrollto">Learn</a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+        </div>
+  
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li class="menu-active"><a href="#intro">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#team">Team</a></li>
+            <li class="menu-has-children"><a href="">Drop Down</a>
+              <ul>
+                <li><a href="#">Drop Down 1</a></li>
+                <li><a href="#">Drop Down 3</a></li>
+                <li><a href="#">Drop Down 4</a></li>
+                <li><a href="#">Drop Down 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav><!-- #nav-menu-container -->
+      </div>
     </header>
 
-    <!----- SLIDES START ---> 
-    
 
-    <div id="slide2">
+
+
+    <!----- SLIDES START --->
+
+
+    <!-- <div id="slide2">
     <div class="content" >
     <div class="quotes_container">
     <h3 class="quotes">“Then the Grinch thought of something he hadn't before! What if Christmas, he thought, doesn't come from a store. What if Christmas...perhaps...means a little bit more!”</h3>
     <img src="./img/bg_1.jpg" alt="" align="left" id="hp"/> <h4 class="author_name_gray">Dr. Seuss </h4>
-    </div> 
-    </div> 
-    </div> 
+    </div>
+    </div>
+    </div>  -->
+    <section class="page-section bg-primary" id="slide2">
+      <div class="content">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="text-white mt-0">We've got what you need!</h2>
+            <hr class="divider light my-4">
+            <p class="text-white-50 mb-4" style="font-size: 25px">Mentor On Demand lets users search for a Mentor for a specific Technical Course, User can search, select, propose & finalize a Mentor of his/her choice, post which training gets started.</p>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="user-signup.html">Get Started!</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
     <div id="slide3">
@@ -53,26 +82,30 @@
     <div class="quotes_container">
     <h3 class="quotes">“WELCOME TO LEARN ERA” </h3>
     <img src="./img/course_5.jpg" align="left"/> <h4 class="author_name_white">Norman Vincent Peale </h4>
-    </div> 
-    </div> 
-    </div> 
+    </div>
+    </div>
+    </div>
+
+
     <div id="slide4">
     <div class="content">
     <div class="quotes_container">
     <h3 class="quotes">“WELCOME TO LEARN ERA” </h3>
     <img src="./img/course_6.jpg" align="left"/> <h4 class="author_name_gray">Dr. Seuss </h4>
-    </div> 
-    </div> 
-    </div> 
+    </div>
+    </div>
+    </div>
+
+
     <div id="slide5">
     <div class="content">
     <div class="quotes_container">
     <h3 class="quotes">“My idea of Christmas, whether old-fashioned or modern, is very simple: loving others. Come to think of it, why do we have to wait for Christmas to do that?” </h3>
     <img src="./img/course_3.jpg" align="left"/> <h4 class="author_name_white">Bob Hope </h4>
-    </div> 
-    <div id="copyright"><a href="https://1stwebdesigner.com/">INSTGARAM </a></div> 
-    </div> 
-    </div> 
+    </div>
+    <div id="copyright"><a href="https://1stwebdesigner.com/">INSTGARAM </a></div>
+    </div>
+    </div>
     <!----- SLIDES END --->
    </body>
    </html>
