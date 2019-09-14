@@ -1,0 +1,302 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    }
+    h1 {
+    font-family:"Arvo";
+    font-weight:normal;
+    font-size: 55px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    }
+    h2 {
+    font-family:"Arvo";
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    }
+    h3 {
+    font-family: Oswald;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    margin: 5px 0;
+    padding: 0;
+    z-index: 1;
+    position: relative;
+    }
+    .center { margin: 0 auto; }
+.content{ margin: 0 auto; width: 960px; }
+.clear { clear: both; }
+
+#hp  {
+    float: right;    
+     margin: 0 0 0 15px;
+    }
+
+#header {
+    width: 100%;
+    background: black;
+    height: 80px;
+    position: fixed;
+    margin-top: 30px;
+    }
+    #nav { width: 410px; float: right; margin-top: 20px; }
+    #logo a { color: #fff; text-decoration: none; float: left; font-size: 30px; margin-top: 20px; color: #fff; font-family:"Wellfleet"; font-weight: bold; }
+    #nav ul{
+    list-style: none;
+    display: block;
+    margin: 0 auto;
+    list-style: none;
+    }
+    #nav li{
+    margin-top: 9px;
+    float: left;
+    padding-left: 21px;
+    }
+    #nav li a { color: #fff; opacity:0.6; font-size: 16px; text-decoration: none; font-family: 'Wellfleet'; }
+    #nav li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; }
+    #nav li a:hover { color: #fff; opacity:1; }
+
+
+    .quotes {
+        font-family: 'Goudy Bookletter 1911', serif;
+        font-weight: normal;
+        font-size: 30px;
+        text-align: left;
+        margin: 50px auto;
+        }
+        
+         .author_name_white { font-family:"Wellfleet"; margin: 70px 0 0 75px; color: #fff; font-size: 20px; } 
+         .author_name_gray { font-family:"Wellfleet"; margin: 70px 0 0 75px; color: #94a4a4; font-size: 20px; } 
+         .quotes_container { width: 800px; margin: 0 auto; }
+        #christmas_tree { background: url('../img/167.jpg')no-repeat; width: 48px; height: 77px; margin: 0 auto; position: relative; bottom: -35px;}
+        #divider { background: url('../img/divider.png')no-repeat; width: 300px; height: 35px; margin: 0px auto 27px auto; }
+        #ribbon { background: url('../img/ribbon.png')no-repeat; width: 251px; height: 48px; margin: 0 auto; display: block; position: relative; top: -38px; }
+        #snowflakes1 { background: url('../img/snowflakes.png')no-repeat; width: 24px; height: 21px; margin: 0 auto; display: block; position: relative; bottom: -54px; left: -102px; }
+        #snowflakes2 { background: url('../img/snowflakes.png')no-repeat; width: 24px; height: 21px; margin: 0 auto; display: block; position: relative; bottom: -33px; right: -100px; }
+
+        #slide1, #slide2{ background-size:cover; }
+#slide1{
+background:url('../img/home.jpg') 50% 0 no-repeat fixed;
+opacity: 0.17px;
+color: #fff;
+height: 600px;
+margin: 0;
+padding: 200px 0 260px 0;
+background-size: cover;
+}
+#slide2{
+background-color: #fff;
+color: #333333;
+height: 300px;
+margin: 0 auto;
+overflow: hidden;
+padding: 200px 0;
+}
+#slide3{
+background: url(../img/bg.jpg) 50% 0 no-repeat fixed;
+color: #fff;
+height: 600px;
+padding: 170px 0 0 0;
+background-size: cover;
+}
+#slide4{
+background-color: #fff;
+color: #333333;
+height: 300px;
+padding: 200px 0;
+}
+#slide5{
+background: url(../img/home.jpg) 50% 0 no-repeat fixed;
+height: 200px;
+margin: 0 auto;
+padding: 250px 0;
+color: #fff;
+background-size: cover;
+}
+
+#copyright { color: #fff; font-family:"Wellfleet"; font-size: 14px; margin-top: 100px; text-align: center; }
+#copyright a { text-decoration: none; color: #fff; }
+
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+#header {
+    padding: 30px 0;
+    height: 92px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+  }
+  
+  #header.header-scrolled {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px 0;
+    height: 72px;
+    transition: all 0.5s;
+  }
+  
+  #header #logo {
+    float: left;
+  }
+  
+  #header #logo h1 {
+    font-size: 34px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+  
+  #header #logo h1 a,
+  #header #logo h1 a:hover {
+    color: #fff;
+    padding-left: 10px;
+    border-left: 4px solid #18d26e;
+  }
+  
+  #header #logo img {
+    padding: 0;
+    margin: 0;
+  }
+  
+  #nav-menu-container {
+    float: right;
+    margin: 0;
+  }
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+/* Nav Menu Essentials */
+
+.nav-menu,
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu > li {
+  float: left;
+}
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+
+.nav-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.nav-menu ul li {
+  min-width: 180px;
+}
+
+/* Nav Menu Arrows */
+
+.sf-arrows .sf-with-ul {
+  padding-right: 30px;
+}
+
+.sf-arrows .sf-with-ul:after {
+  content: "\f107";
+  position: absolute;
+  right: 15px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.sf-arrows ul .sf-with-ul:after {
+  content: "\f105";
+}
+
+/* Nav Meu Container */
+
+#nav-menu-container {
+  float: right;
+  margin: 0;
+}
+
+/* Nav Meu Styling */
+
+.nav-menu a {
+  padding: 0 8px 10px 8px;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.nav-menu li:hover > a,
+.nav-menu > .menu-active > a {
+  color: #18d26e;
+}
+
+.nav-menu > li {
+  margin-left: 10px;
+}
+
+.nav-menu ul {
+  margin: 4px 0 0 0;
+  padding: 10px;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: #fff;
+}
+
+.nav-menu ul li {
+  transition: 0.3s;
+}
+
+.nav-menu ul li a {
+  padding: 10px;
+  color: #333;
+  transition: 0.3s;
+  display: block;
+  font-size: 13px;
+  text-transform: none;
+}
+
+.nav-menu ul li:hover > a {
+  color: #18d26e;
+}
+
+.nav-menu ul ul {
+  margin: 0;
+}
