@@ -40,3 +40,9 @@ $(document).ready(function() {
                  });
                
                });
+  $('.nav-menu').superfish({
+  animation: {
+    opacity: 'show'
+  },
+  speed: 400
+});
