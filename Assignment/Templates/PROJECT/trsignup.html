@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="./css/proj.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+  <link href='https://fonts.googleapis.com/css?family=Rajdhani:400,500,700' rel='stylesheet' type='text/css'>
+
+  <style>
+    body {
+      background-image: url("https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80");
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="index.html"><b>LEARNING HUB</b></a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="home.html"><i class="fa fa-home"></i>Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about_us.html"><i class="fa fa-user"></i> About Us</a>
+      </li>
+    </ul>
+    <div class="search">
+      <button class="btn btn-warning btn-sm" type="submit" onclick="location.href='search.html'">Search Trainer</button>
+    </div>
+  </nav>
+
+  <div class="text-center">
+    </br>
+    </br>
+    <h1 class="font-weight-light">
+      TRAINER SIGNUP
+    </h1>
+  </div>
+
+
+
+
+
+  <div class="d-flex justify-content-center" style="padding-top: 10%; padding-bottom: 10%">
+    <div class="card" style="height: 500px; width: 450px;">
+            <div class="card-body">
+                    <form>
+                            <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="username">
+                                    
+                            </div>
+                            <div class="input-group form-group">
+                              <div class="input-group-prepend">
+                                      <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                              </div>
+                              <input type="text" class="form-control" placeholder="email">
+                              
+                      </div>
+                      <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-pie-chart"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="technologies">
+                        
+                </div>
+                <div class="input-group form-group">
+                  <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fa fa-clock-o"></i></span>
+                  </div>
+                  <select id="timeSlot" class="form-control">
+                    <option selected>Time Slot</option>
+                    <option>7am-9am</option>
+                    <option>4pm-6pm</option>
+                    <option>6pm-8pm</option>
+                  </select>
+                  
+          </div>
+          <div class="input-group form-group">
+            <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-linkedin"></i></span>
+            </div>
+            <input type="text" class="form-control" placeholder="linked-in id">
+            
+    </div>
+    <div class="input-group form-group">
+      <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+      </div>
+      <input type="text" class="form-control" placeholder="years of experience">
+      
+</div>
+                            <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                    </div>
+                                    <input type="password" class="form-control" placeholder="password">
+                            </div>
+                            <div class="form-group">
+                                    <input type="button" value="Sign Up" class="btn float-right login_btn" onclick="location.href='trsignin.html'">
+                            </div>
+                    </form>
+            </div>
+            <div class="card-footer">
+                    <div class="d-flex justify-content-center links">
+                            Already have an account?<a href="trsignin.html">Sign In</a>
+                    </div>
+            </div>
+    </div>
+</div>
+ 
+</body>
+
+</html>

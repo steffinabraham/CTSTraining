@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Trainer Menu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="./css/proj.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link href='https://fonts.googleapis.com/css?family=Rajdhani:400,500,700' rel='stylesheet' type='text/css'>
+
+    <style>
+        body{
+        background-image: url("https://images.unsplash.com/photo-1484689228555-fd6bc1b28b7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80");
+        background-size: cover; 
+            }
+    </style>
+
+</head>
+
+<body>
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="index.html"><b>LEARNING HUB</b></a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html"><i class="fa fa-home"></i>Home</a>
+              </li>
+              <li class="nav-item" >
+                <a class="nav-link" href="about_us.html"><i class="fa fa-user"></i> About Us</a>
+              </li>
+            </ul>
+            <div class="search">
+                <ul class="navbar-nav">
+                   <li class="nav-item">
+                        <a class="nav-link" href="trsignin.html">Logout</a>
+                    </li>
+                </ul>  
+            </div>
+        </nav>
+
+    <br>
+    <br>
+
+    <div class="container" style="padding-top: 150px">
+
+        <div class="card-deck">
+            <div class="card" style="width:400px; height:300px; border-radius: 2rem; color: white;">
+                <span style="padding: 15px; color: goldenrod" class="fa fa-edit fa-5x"></span>
+                <div class="card-body">
+                    <h4 class="card-title">Edit Skills</h4>
+                    <p class="card-text">Edit the technologies and provided trainings.</p>
+                    <a href="tr_edit.html" class="btn btn-warning col-md-12">View</a>
+
+                </div>
+            </div>
+
+            <div class="card" style="width:400px; height:300px; border-radius: 2rem; color: white;">
+                    <span style="padding: 15px; color: goldenrod" class="fa fa-thumbs-o-up fa-5x"></span>
+                <div class="card-body">
+                    <h4 class="card-title">Completed Trainings</h4>
+                    <p class="card-text">See completed courses</p>
+                    <a href="tr_comp_training.html" class="btn btn-warning col-md-12">View</a>
+                </div>
+            </div>
+
+            <div class="card" style="width:400px; height:300px; border-radius: 2rem; color: white;">
+                    <span style="padding: 15px; color: goldenrod" class="fa fa-clock-o fa-5x"></span>
+                <div class="card-body">
+                    <h4 class="card-title">Current Trainings</h4>
+                    <p class="card-text">See ongoing Trainings</p>
+                    <a href="tr_curr_training.html" class="btn btn-warning col-md-12" >View</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
