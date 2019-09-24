@@ -29,12 +29,12 @@
     }
     
     .pimg1{
-    background-image:url('C:\Users\Dell\Documents\GitHub\CTSTraining\Assignment\FinalProject\LearnEra\src\assets\bg (15).jpeg');
+    background-image:url('src/assets/bg.png');
     min-height:500px;
     }
     
     .pimg2{
-    background-image:url('C:\Users\Dell\Documents\GitHub\CTSTraining\Assignment\FinalProject\LearnEra\src\assets\bg (4).jpeg');
+    background-image:url('src/assets/bg (4).jpeg');
     min-height:400px;
     }
     
