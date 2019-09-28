@@ -4,6 +4,7 @@ var ObjectId = require('mongoose').Types.ObjectId;
 
 var { Employee } = require('../models/employee');
 
+
 // => localhost:3000/employees/
 router.get('/', (req, res) => {
     Employee.find((err, docs) => {
@@ -29,6 +30,8 @@ router.post('/', (req, res) => {
         office: req.body.office,
         salary: req.body.salary,
     });
+
+
     emp.save((err, doc) => {
         if (!err) { res.send(doc); }
         else { console.log('Error in Employee Save :' + JSON.stringify(err, undefined, 2)); }
