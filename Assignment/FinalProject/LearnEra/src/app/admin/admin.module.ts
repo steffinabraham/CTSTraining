@@ -1,16 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AdminDashComponent } from './admin-dash/admin-dash.component';
-import { RouterModule } from '@angular/router';
+import { AdmindashComponent } from './admindash/admindash.component';
 
 
 
 @NgModule({
-  declarations: [AdminDashComponent],
+  declarations: [AdmindashComponent],
   imports: [
-    CommonModule,
-    RouterModule.forRoot([{path:'admin-dash',component:AdminDashComponent}])
-  ],
-  exports:[AdminDashComponent]
+    CommonModule
+  ]
 })
 export class AdminModule { }
