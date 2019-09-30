@@ -5,6 +5,14 @@ const cors     = require('cors')// Allows Cross Site Access
 const config   = require('./config/config')// config/config.js
 const app      = express()
 
+        // require('./config/passport');
+        // const auth = require('./routes/auth');
+        // app.use('/auth', auth);
+
+        app.use(passport.initialize());
+    app.use(passport.session());
+    require('./config/passport')(passport);
+
 app.use(cors())// Allows Cross Site Access
 
 mongoose.connect(`${config.mongodb_server}${config.database_name}?retryWrites=true`,
