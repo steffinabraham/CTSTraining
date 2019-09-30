@@ -5,14 +5,6 @@ const cors     = require('cors')// Allows Cross Site Access
 const config   = require('./config/config')// config/config.js
 const app      = express()
 
-        // require('./config/passport');
-        // const auth = require('./routes/auth');
-        // app.use('/auth', auth);
-
-        app.use(passport.initialize());
-    app.use(passport.session());
-    require('./config/passport')(passport);
-
 app.use(cors())// Allows Cross Site Access
 
 mongoose.connect(`${config.mongodb_server}${config.database_name}?retryWrites=true`,
@@ -40,6 +32,10 @@ app.use('/user', user_route)// user routes
 /* app.get('/user', (req, res)=>{// http:localhost:3000/user
     res.send(`user GET Request`)
 }) */
+
+const course_route = require('./routes/course_r')// user routes
+app.use('/course', course_route)// user routes
+
 
 const item_route = require('./routes/item_r')// item routes
 app.use('/item', validate_token, item_route)// item routes

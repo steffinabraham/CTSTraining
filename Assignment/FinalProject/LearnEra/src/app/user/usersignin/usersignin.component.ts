@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
+import { Router } from '@angular/router'; 
 
 @Component({
   selector: 'app-usersignin',
@@ -12,7 +13,8 @@ export class UsersigninComponent implements OnInit {
   pass_word;
   error_message = ""
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private _router : Router) { }
+
 
   ngOnInit() {
   }
@@ -34,8 +36,10 @@ this.http.post("http://localhost:3000/user/check", body,
           this.error_message = "Invalid User"
         } else {// we will get the JWT token from REST API / Server then we have to store in the Frontend
           localStorage.setItem('token', result);
+          this._router.navigate(['userdash'])               
+
           //this.error_message = ""
-          this.error_message = result
+          // this.error_message = result
         }
       },
       (error) => {
