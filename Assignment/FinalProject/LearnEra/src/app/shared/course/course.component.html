@@ -1,0 +1,19 @@
+<!-- <div class="container"> -->
+    <h1>course List</h1>
+    <div class="table-responsive">
+    <table class="table table-striped table-bordered table-hover">
+      <tr><th>ID</th><th>course Name</th></tr>
+      <tr *ngFor = "let course of courses">
+        <td>{{course._id}}</td>
+        <td>{{course.course_name}}</td>
+
+        <td><a (click) = "delete_employee(course._id)" title="Delete"><i class="glyphicon glyphicon-remove glyphicon-big" style="color:red;"></i></a></td>
+        <td [routerLink] = "['/update_employee', course._id]"><a title="Update"><i class="glyphicon glyphicon-edit glyphicon-big" aria-hidden="true"></i></a></td>
+      </tr>
+    </table>
+    </div>
+    
+    <div>
+        <p class="red-text">{{error_message}}</p>
+    </div>
+    <!-- </div> -->

@@ -16,7 +16,7 @@
     
     .pimg1, .pimg2, .pimg3{
     position:relative;
-    opacity:0.70;
+    /* opacity:0.90; */
     background-position:center;
     background-size:cover;
     background-repeat:no-repeat;
@@ -29,17 +29,17 @@
     }
     
     .pimg1{
-    background-image:url('src/assets/bg.png');
-    min-height:500px;
+    background-image:url('src/assets/purple/stars-3000x2000-purple-cosmos-hd-7172.jpg');
+    min-height:570px;
     }
     
     .pimg2{
-    background-image:url('src/assets/bg (4).jpeg');
-    min-height:400px;
+    background-image:url('C:\Users\steff\Documents\GitHub\CTSTraining\Assignment\FinalProject\LearnEra\src\assets\Purple\neon-lights-3840x2160-purple-dark-4k-17388.jpg');
+    min-height:200px;
     }
     
     .pimg3{
-    background-image:url('src/assets/bg (4).jpeg');
+    background-image:url('C:\Users\steff\Documents\GitHub\CTSTraining\Assignment\FinalProject\LearnEra\src\assets\Purple\starry-sky-2568x1633-night-purple-sky-twilight-mountains-hd-15951.jpg');
     min-height:400px;
     }
     
@@ -63,14 +63,15 @@
     top:50%;
     width:100%;
     text-align:center;
-    color:#000;
+    color:rgb(141, 12, 216);
     font-size:27px;
     letter-spacing:8px;
     text-transform:uppercase;
+    
     }
     
     .ptext .border{
-    background-color:#111;
+    background-color:rgb(141, 12, 216);
     color:#fff;
     padding:20px;
     }
@@ -98,10 +99,11 @@
     overflow: hidden;
     border-radius: 10px;
     margin: 0 10px 40px 10px;
-    background: #fff;
+    background: rgb(214, 185, 223);
     box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out ;
     text-align: center;
+    
   }
   
   #services .box:hover {
@@ -125,9 +127,9 @@
   }
   
   #services .title {
-    font-weight: 700;
+    font-weight: 1000;
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 20px;
   }
   
   #services .title a {
@@ -143,5 +145,7 @@
     line-height: 28px;
     margin-bottom: 0;
     text-align: left;
+    color: black;
+    font-weight: 700;
   }
   

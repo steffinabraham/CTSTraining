@@ -33,6 +33,10 @@ app.use('/user', user_route)// user routes
     res.send(`user GET Request`)
 }) */
 
+
+// COURSE ROUTE
+
+
 const course_route = require('./routes/course_r')// user routes
 app.use('/course', course_route)// user routes
 

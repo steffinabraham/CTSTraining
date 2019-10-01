@@ -1,41 +1,67 @@
-.Navbar
-    {
-        margin: 10px;
-        color: blue;
-    }
-#nav {
-    height: 70px;
-    background: transparent; 
-    display: block;
-    position: fixed;
-    width: 100%;
-    z-index: 99999;
-    transition: all ease .5s;
-    }
-    
-    #logo {
-    color: #fff;
-    padding: 20px;
-    font-size: 18px;
-    transition: all ease .5s;
-    }
-    
-    #hero {
-    height: 500px;
-    width: 100%;
-    background: url('http://community.lovenature.com/wp-content/uploads/sites/4/2016/08/jimi-hendrix.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    }
-    
-    #nav.shrink {
-    height: 40px;
-    transition: all ease .5s;
-    background: black;
-    }
-    
-    #nav.shrink #logo {
-    padding: 10px;
-    transition: all ease .5s;
-    }
+body {
+  margin: 0;
+  padding: 0;
+  background: rgba(93, 9, 150, 0.753);
+}
+ 
+.nav ul {
+  list-style: none;
+  background-color:rgba(93, 9, 150, 0.753);
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.5em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+ 
+.nav a:hover {
+  background-color: #000000;
+}
+ 
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+ 
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 0.9em;
+  }
+ 
+  /* Option 1 - Display Inline */
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+ 
+  /*Options 2 - Float*/
+  .nav li {
+    float: left;
+  }
+  .nav ul {
+    overflow: auto;
+    width: 600px;
+    margin: 0 auto;
+  }
+  .nav {
+    background-color:rgba(93, 9, 150, 0.753);
+  }
+ 
+}
