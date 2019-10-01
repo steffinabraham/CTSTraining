@@ -30,16 +30,18 @@
     
     .pimg1{
     background-image:url('src/assets/purple/stars-3000x2000-purple-cosmos-hd-7172.jpg');
+    
+    
     min-height:570px;
     }
     
     .pimg2{
-    background-image:url('C:\Users\steff\Documents\GitHub\CTSTraining\Assignment\FinalProject\LearnEra\src\assets\Purple\neon-lights-3840x2160-purple-dark-4k-17388.jpg');
+    background-image:url('src/assets/purple/stars-3000x2000-purple-cosmos-hd-7172.jpg');
     min-height:200px;
     }
     
     .pimg3{
-    background-image:url('C:\Users\steff\Documents\GitHub\CTSTraining\Assignment\FinalProject\LearnEra\src\assets\Purple\starry-sky-2568x1633-night-purple-sky-twilight-mountains-hd-15951.jpg');
+    background-image:url('src/assets/purple/stars-3000x2000-purple-cosmos-hd-7172.jpg');
     min-height:400px;
     }
     

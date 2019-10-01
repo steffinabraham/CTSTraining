@@ -40,6 +40,12 @@ app.use('/user', user_route)// user routes
 const course_route = require('./routes/course_r')// user routes
 app.use('/course', course_route)// user routes
 
+// ADMIN ROUTE
+
+const admin_route = require('./routes/admin_r')// user routes
+app.use('/admin', admin_route)// user routes
+
+
 
 const item_route = require('./routes/item_r')// item routes
 app.use('/item', validate_token, item_route)// item routes
