@@ -34,17 +34,31 @@ app.use('/user', user_route)// user routes
 }) */
 
 
+
+//---------------------------------------------------------------
+
 // COURSE ROUTE
 
 
 const course_route = require('./routes/course_r')// user routes
 app.use('/course', course_route)// user routes
 
+//---------------------------------------------------------------
+
 // ADMIN ROUTE
 
 const admin_route = require('./routes/admin_r')// user routes
 app.use('/admin', admin_route)// user routes
 
+//---------------------------------------------------------------
+
+//MENTOR ROUTE
+
+const mentor_route = require('./routes/mentor_r')// user routes
+app.use('/mentor', mentor_route)// user routes
+
+
+//---------------------------------------------------------------
 
 
 const item_route = require('./routes/item_r')// item routes

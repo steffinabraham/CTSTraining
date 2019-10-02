@@ -8,6 +8,9 @@ import { UsersignupComponent } from './user/usersignup/usersignup.component';
 import { UserdashComponent } from './user/userdash/userdash.component';
 import { AdminloginComponent } from './admin/adminlogin/adminlogin.component';
 import { AdmindashComponent } from './admin/admindash/admindash.component';
+import { MentordashComponent } from './mentor/mentordash/mentordash.component';
+import { MentorloginComponent } from './mentor/mentorlogin/mentorlogin.component';
+import { MentorsignupComponent } from './mentor/mentorsignup/mentorsignup.component';
 
 
 
@@ -19,7 +22,11 @@ const routes: Routes = [
   { path: 'userdash', component: UserdashComponent},
   { path: 'course', component: CourseComponent},
   { path: 'admin', component: AdminloginComponent},
-  { path: 'admindash', component: AdmindashComponent}
+  { path: 'admindash', component: AdmindashComponent},
+  { path: 'mentordash', component: MentordashComponent},
+  { path: 'mentor', component: MentorloginComponent},
+  { path: 'mentorsignup', component: MentorsignupComponent},
+  { path: 'adminlogin', component: AdminloginComponent},
  
   
 ];
@@ -32,5 +39,6 @@ export class AppRoutingModule { }
 export const routingComponents = [NavComponent, HomeComponent, CourseComponent]
 export const userComponents = [UsersignupComponent, UsersigninComponent, UserdashComponent]
 export const adminComponents = [AdminloginComponent, AdmindashComponent]
+export const mentorComponents = [MentorsignupComponent, MentorloginComponent, MentordashComponent]
 
  

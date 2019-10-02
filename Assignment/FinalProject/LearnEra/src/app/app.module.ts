@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 
-import { AppRoutingModule, routingComponents, userComponents, adminComponents } from './app-routing.module';
+import { AppRoutingModule, routingComponents, userComponents, adminComponents , mentorComponents} from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './shared/home/home.component';
 import { NavComponent } from './shared/nav/nav.component';
@@ -16,7 +16,9 @@ import { NavComponent } from './shared/nav/nav.component';
     NavComponent,
     routingComponents,
     userComponents,
-    adminComponents
+    adminComponents,
+    mentorComponents
+ 
 
   ],
   imports: [

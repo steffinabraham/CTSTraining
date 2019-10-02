@@ -14,6 +14,7 @@ export class AuthService {
 
     logoutUser() {
       localStorage.removeItem('token')
+      localStorage.removeItem('email')
       this._router.navigate(['/'])
     }
     getToken() {
@@ -21,5 +22,8 @@ export class AuthService {
     }
     loggedIn() {
       return !!localStorage.getItem('token')    
+    }
+    adminCheck() {
+      return !!localStorage.getItem('email')    
     }
 }

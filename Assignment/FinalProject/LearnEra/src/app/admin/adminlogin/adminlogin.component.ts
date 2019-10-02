@@ -36,6 +36,7 @@ export class AdminloginComponent implements OnInit {
             this.error_message = "Invalid admin"
           } else {// we will get the JWT token from REST API / Server then we have to store in the Frontend
             localStorage.setItem('token', result);
+            localStorage.setItem('email',"hi")
             this._router.navigate(['admindash'])               
   
             //this.error_message = ""
