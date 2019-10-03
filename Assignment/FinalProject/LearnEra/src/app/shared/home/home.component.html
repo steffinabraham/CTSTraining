@@ -121,247 +121,64 @@
     </div>
   </section>
 
-<!-- Courses Section -->
-<section id="courses " >
-    <!-- <h1 style="margin-top:150px;color:">Explore Courses</h1> -->
-    <div class="row justify-content-center sectionHeight">
-        <div class="col-lg-8 text-center">
-          <h2 class="mt-5">Explore Courses</h2>
-          <hr class="divider my-4">
-        </div>
-    <div class="search-sec" style="background: #1A4668;padding: 2rem;margin-top:65px;margin-left: 150px;width: 1000px;margin-top: 30px">
+<!-- ############################################----- SEARCH BEGIN ----############################################ -->
 
-      <div class="container">
-          <form action="search.html" method="post" novalidate="novalidate">
-              <div class="row">
-                  <div class="col-lg-12">
-                      <div class="row">
-                          <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                              <input type="text" size="50" class="form-control search-slt" placeholder="Enter Technology" >
-                          </div>
-                           
-                            <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                              <select class="form-control search-slt" id="exampleFormControlSelect1">
-                                  <option size="50">Select Time Slot</option>
-                                  <option>4pm-6pm</option>
-                                  <option>6pm-8pm</option>
-                                  <option>7pm-9pm</option>
-                              </select>
-                          </div>
-                          <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                              <button type="submit" class="btn btn-primary wrn-btn" >Search</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </form>
+<section class="section section-bg section section-dark sectionHeight">
+    <div class="pimgClouds" style="padding:0px 0px;">
+      <div class="wowsearch">
+        <!-- <p>Your Search End Here..</p> -->
+        <input type="text" placeholder="Seek & find">
+        <div class="search"></div>
       </div>
-      </div></div>
-    </section>
+</div>
+</section>
 
 
 
 
 
+<section class="sectionSearchbar section-bg sectionSearchbar section-dark sectionHeight">
+    <div class="containerSearchbar text-center">
+        <h1>{{title}}</h1>
+      </div>
+      <div class="containerSearchbar">
+        <div class="row">
+          <div class="search-hero">
+            <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&#61442;  Start searching for a hero by id or name or country">
+          </div>
+          <table class="table table-striped">
+            <thead>
+            <tr>
+              <th>Id</th>
+              <th>Hero Name</th>
+              <th>Country</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let course of courses | filter:searchText">
+              <td>{{course.id}}</td>
+              <td>{{course.course_name}}</td>
+              <td>{{course.course_desc}}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+</section>
 
-  <div class="pimg2">
-    <div class="ptext">
-      <span class="border trans">
-        Courses
-      </span>
-    </div>
-  </div>
+
+<!-- ############################################----- SEARCH END ----############################################ -->
 
 
-<!--Sign Up Section - Mentor & Student -->
-
-
-  <section class="section section-dark">
-      <div class="move">
-        <table>
-          <tr>
-            <div class="button">
-              <td>
-                <form action="mentor.html">
-                <input type="image" alt="trainer" src="assets/mentor.png" width="50%" >
-                </form>
-              </td>
-              
-              <td>
-                <form action="student.html">
-                  <input type="image" alt="student" src="assets/student.png" width="50%" >
-                </form>
-              </td>
-            </div>
-          </tr>
-
-          <tr>
-            <td>
-              <div class="button">
-                  <button type="button" class="btn-primary" onclick="document.getElementById('id01').style.display='block'" >Trainer</button>
-              </div>
-            </td>
-            
-            <td><div class="button">
-                   <button type="button" class="btn-primary" onclick="document.getElementById('id01').style.display='block'">Learner</button>
-                </div>    
-            </td>
-          </tr>
-
-        </table>
-      </div> 
-  </section>
-
-  <div class="pimg3">
-    <div class="ptext">
-      <span class="border trans">
-        Let's Get Started
-      </span>
-    </div>
-  </div>
-
-  <section class="section section-dark">
-    <h2>Trainer              Student</h2>
-    <p>
-      choose if u are a teacher or a student
-    </p>
-    
-  </section>
 
   <div class="pimg1">
     <div class="ptext">
       <span class="border">
-        Learn-era
+        Let's Get Started..
       </span>
     </div>
   </div>
 
-
-  <section class="section section-dark">
-      
-  <!--==========================
-    Footer
-  ============================-->
-  <footer id="footer" class="section-bg">
-      <div class="footer-top">
-        <div class="container">
   
-          <div class="row">
-  
-            <div class="col-lg-6">
-  
-              <div class="row">
-  
-                  <div class="col-sm-6">
-  
-                    <div class="footer-info">
-                      <h3>Rapid</h3>
-                      <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
-                    </div>
-  
-                    <div class="footer-newsletter">
-                      <h4>Our Newsletter</h4>
-                      <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem.</p>
-                      <form action="" method="post">
-                        <input type="email" name="email"><input type="submit"  value="Subscribe">
-                      </form>
-                    </div>
-  
-                  </div>
-  
-                  <div class="col-sm-6">
-                    <div class="footer-links">
-                      <h4>Useful Links</h4>
-                      <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Terms of service</a></li>
-                        <li><a href="#">Privacy policy</a></li>
-                      </ul>
-                    </div>
-  
-                    <div class="footer-links">
-                      <h4>Contact Us</h4>
-                      <p>
-                        A108 Adam Street <br>
-                        New York, NY 535022<br>
-                        United States <br>
-                        <strong>Phone:</strong> +1 5589 55488 55<br>
-                        <strong>Email:</strong> info@example.com<br>
-                      </p>
-                    </div>
-  
-                    <div class="social-links">
-                      <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                      <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                      <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                      <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                    </div>
-  
-                  </div>
-  
-              </div>
-  
-            </div>
-  
-            <div class="col-lg-6">
-  
-              <div class="form">
-                
-                <h4>Send us a message</h4>
-                <p>Eos ipsa est voluptates. Nostrum nam libero ipsa vero. Debitis quasi sit eaque numquam similique commodi harum aut temporibus.</p>
-                <form action="" method="post" role="form" class="contactForm">
-                  <div class="form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validation"></div>
-                  </div>
-                  <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validation"></div>
-                  </div>
-                  <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                    <div class="validation"></div>
-                  </div>
-                  <div class="form-group">
-                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                    <div class="validation"></div>
-                  </div>
-  
-                  <div id="sendmessage">Your message has been sent. Thank you!</div>
-                  <div id="errormessage"></div>
-  
-                  <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
-                </form>
-              </div>
-  
-            </div>
-  
-            
-  
-          </div>
-  
-        </div>
-      </div>
-  
-      <div class="container">
-        <div class="copyright">
-          &copy; Copyright <strong>Rapid</strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
-          -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
-      </div>
-    </footer>
-    <!-- #footer -->
-
-</section>
 
                    

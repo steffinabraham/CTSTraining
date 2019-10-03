@@ -18,6 +18,14 @@ select_all: async (req, res)=>{// Get all courses
         res.status(500).send(err)
     }
 },
+
+
+// ----------------------------- SEARCH COURSE -----------------------------
+
+
+
+
+// -------------------------------------------------------------------------
 records_in_table_form: async (req, res)=>{// Get all courses & List in HTML Table
     try {
         let courses = await course_model.find().exec()

@@ -1,3 +1,6 @@
+/* @import url('https://fonts.googleapis.com/css?family=Inconsolata:700'); */
+
+
 .Navbar
 {
     margin: 10px;
@@ -103,8 +106,8 @@ min-height:400px;
 
 .pimgClouds{
   background-image:url("src\assets\Purple\clouds.jpg");
-  min-height:300px;
-  
+  min-height:400px;
+  padding: 0px 0px;
   background-attachment:scroll;
   }
 
@@ -113,6 +116,11 @@ min-height:400px;
 .section{
 text-align:center;
 padding:50px 80px;
+}
+
+.section-search
+{
+  padding:50px 80px;
 }
 
 .section-light{
@@ -124,6 +132,7 @@ color:#666;
   color: white;
   background-color: rgb(88, 18, 145);
   font-size: 150%;
+  
 }
 
 .ptext{
@@ -221,3 +230,155 @@ background-color:transparent;
 .sectionHeight{
   min-height:400px;
 }
+
+
+
+/*----------------------------------- SEARCH BAR --------------------------*/
+
+ * {
+	 /* margin: 0; */
+	 padding: 0;
+	 box-sizing: border-box;
+}
+
+ body {
+	 background: #252525;
+}
+ .wowsearch {
+	 position: absolute;
+	 margin: auto;
+	 top: 0;
+	 left: 0;
+	 right: 0;
+	 bottom: 0;
+	 width: 300px;
+	 height: 100px;
+}
+ .wowsearch .search {
+	 position: absolute;
+	 margin: auto;
+	 top: 0;
+	 right: 0;
+	 bottom: 0;
+	 left: 0;
+	 width: 80px;
+	 height: 80px;
+	 background: rgb(108, 12, 153);
+	 border-radius: 50%;
+	 transition: all 1s;
+	 z-index: 4;
+	 box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+}
+ .wowsearch .search:hover {
+	 cursor: pointer;
+}
+ .wowsearch .search::before {
+	 content: "";
+	 position: absolute;
+	 margin: auto;
+	 top: 22px;
+	 right: 0;
+	 bottom: 0;
+	 left: 22px;
+	 width: 12px;
+	 height: 2px;
+	 background: white;
+	 transform: rotate(45deg);
+	 transition: all 0.5s;
+}
+ .wowsearch .search::after {
+	 content: "";
+	 position: absolute;
+	 margin: auto;
+	 top: -5px;
+	 right: 0;
+	 bottom: 0;
+	 left: -5px;
+	 width: 25px;
+	 height: 25px;
+	 border-radius: 50%;
+	 border: 2px solid white;
+	 transition: all 0.5s;
+}
+ .wowsearch input {
+	 font-family: 'Inconsolata', monospace;
+	 position: absolute;
+	 margin: auto;
+	 top: 0;
+	 right: 0;
+	 bottom: 0;
+	 left: 0;
+	 width: 50px;
+	 height: 50px;
+	 outline: none;
+	 border: none;
+	 background: crimson;
+	 color: white;
+	 text-shadow: 0 0 10px crimson;
+	 padding: 0 80px 0 20px;
+	 border-radius: 30px;
+	 box-shadow: 0 0 25px 0 crimson, 0 20px 25px 0 rgba(0, 0, 0, 0.2);
+	 transition: all 1s;
+	 opacity: 0;
+	 z-index: 5;
+	 font-weight: bolder;
+	 letter-spacing: 0.1em;
+}
+ .wowsearch input:hover {
+	 cursor: pointer;
+}
+ .wowsearch input:focus {
+	 width: 300px;
+	 opacity: 1;
+	 cursor: text;
+}
+ .wowsearch input:focus ~ .search {
+	 right: -250px;
+	 background: #151515;
+	 z-index: 6;
+}
+ .wowsearch input:focus ~ .search::before {
+	 top: 0;
+	 left: 0;
+	 width: 25px;
+}
+ .wowsearch input:focus ~ .search::after {
+	 top: 0;
+	 left: 0;
+	 width: 25px;
+	 height: 2px;
+	 border: none;
+	 background: white;
+	 border-radius: 0%;
+	 transform: rotate(-45deg);
+}
+ .wowsearch input::placeholder {
+	 color: white;
+	 opacity: 0.5;
+	 font-weight: bolder;
+}
+ 
+/*------------------------------------------------------------------------------------------*/
+
+
+
+
+
+.containerSearchbar {
+	padding-top: 50px;
+	padding-bottom: 10px;
+	color: #405065;
+  }
+  
+  .search-hero {
+	max-width: 500px;
+	padding-bottom: 50px;
+	margin:auto;
+  }
+  
+  .form-control {
+	box-shadow: 0 10px 40px 0 #B0C1D9;
+  }
+  .form-control::placeholder  {
+	font-family: FontAwesome;
+  }
