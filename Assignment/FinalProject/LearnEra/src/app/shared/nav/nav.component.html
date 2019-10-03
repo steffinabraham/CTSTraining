@@ -1,59 +1,205 @@
-<!DOCTYPE html>
-<html>
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Round Navigation</title>
-
-    <link rel="stylesheet" href="assets/demo.css">
-    <link rel="stylesheet" href="assets/navigation-round.css">
-    <link rel="stylesheet" href="assets/slicknav/slicknav.min.css">
-
-</head>
-
-<body>
-
-<nav class="menu-navigation-round">
-    <a href="#">Home</a>
-    <a href="#">Products</a>
-    <a href="#">Services</a>
-    <a href="#">Reach us</a>
-    <a href="#" class="selected">About</a>
-</nav>
-
-
-
-
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="assets/slicknav/jquery.slicknav.min.js"></script>
-
-<script>
-
-    $(function(){
-
-        var menu = $('.menu-navigation-round');
-
-        menu.slicknav();
-
-        // Mark the clicked item as selected
-
-        menu.on('click', 'a', function(){
-            var a = $(this);
-
-            a.siblings().removeClass('selected');
-            a.addClass('selected');
-        });
-    });
+<div class="container">
+    <div class="component">
+      <h2>Hi</h2>
+      <!-- Start Nav Structure -->
+      <button class="cn-button" id="cn-button">Menu</button>
+      <div class="cn-wrapper" id="cn-wrapper">
+        <ul>
+          <li>
+            <a href="#">
+              <span>Home</span>
+              <svg class="caticon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   width="35px" height="70px" viewBox="0 0 512 512" enable-background="new 0 0 50 50" xml:space="preserve">
+                <path fill="white" id="shop-3-icon" d="M79.792,217.25v235h352.75v-235H79.792z M397.542,381.75h-282.75v-129.5h282.75V381.75z M220.62,59.75
+                                          l-17.798,85.332h-0.081v17.34c0,18.314-14.847,33.161-33.161,33.161s-33.16-14.847-33.16-33.161v-17.34l50.841-85.332H220.62z
+                                          M168.232,59.75l-51.91,85.332v17.34c0,18.314-14.847,33.161-33.161,33.161S50,180.736,50,162.422v-17.34l83.666-85.332H168.232z
+                                          M462,145.082v17.34c0,18.314-14.847,33.161-33.161,33.161s-33.161-14.847-33.161-33.161v-17.34l-51.91-85.332h34.566L462,145.082z
+                                          M289.08,145.082h0.081v17.34c0,18.314-14.847,33.161-33.161,33.161s-33.161-14.847-33.161-33.161v-17.34h0.081l16.729-85.332
+                                          h32.703L289.08,145.082z M324.739,59.75l50.841,85.332v17.34c0,18.314-14.846,33.161-33.16,33.161s-33.161-14.847-33.161-33.161
+                                          v-17.34h-0.081L291.38,59.75H324.739z"/>
+              </svg>
+            </a>
+          </li>
+          <li><a href="#"><span>Furniture</span></a></li>
+          <li><a href="#"><span>Transport</span></a></li>
+          <li><a href="#"><span>Gift</span></a></li>
+          <li><a href="#"><span>Clothes</span></a></li>
+          <li><a href="#"><span>Games</span></a></li>
+          <li><a href="#"><span>Stationary</span></a></li>
+          <li><a href="#"><span>Toys</span></a></li>
+          <li><a href="#"><span>Books</span></a></li>
+          <li><a href="#"><span>Login</span></a></li>
+          <li><a href="#"><span>Register</span></a></li>
+          <li><a href="#"><span>Sell</span></a></li>
+        </ul>
+      </div>
+      <!-- End of Nav Structure -->
+    </div>
+  </div><!-- /container -->
 
 
-</script>
 
-</body>
+  <script>
+(function(){
 
-</html>
+var button = document.getElementById('cn-button'),
+  wrapper = document.getElementById('cn-wrapper');
+
+  //open and close menu when the button is clicked
+var open = false;
+button.addEventListener('click', handler, false);
+
+function handler(){
+  if(!open){
+    this.innerHTML = "Close";
+    classie.add(wrapper, 'opened-nav');
+  }
+  else{
+    this.innerHTML = "Menu";
+  classie.remove(wrapper, 'opened-nav');
+  }
+  open = !open;
+}
+function closeWrapper(){
+  classie.remove(wrapper, 'opened-nav');
+}
+
+})();
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          /*!
+* classie - class helper functions
+* from bonzo https://github.com/ded/bonzo
+* 
+* classie.has( elem, 'my-class' ) -> true/false
+* classie.add( elem, 'my-new-class' )
+* classie.remove( elem, 'my-unwanted-class' )
+* classie.toggle( elem, 'my-class' )
+*/
+
+/*jshint browser: true, strict: true, undef: true */
+/*global define: false */
+
+( function( window ) {
+
+'use strict';
+
+// class helper functions from bonzo https://github.com/ded/bonzo
+
+function classReg( className ) {
+return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+}
+
+// classList support for class management
+// altho to be fair, the api sucks because it won't accept multiple classes at once
+var hasClass, addClass, removeClass;
+
+if ( 'classList' in document.documentElement ) {
+hasClass = function( elem, c ) {
+  return elem.classList.contains( c );
+};
+addClass = function( elem, c ) {
+  elem.classList.add( c );
+};
+removeClass = function( elem, c ) {
+  elem.classList.remove( c );
+};
+}
+else {
+hasClass = function( elem, c ) {
+  return classReg( c ).test( elem.className );
+};
+addClass = function( elem, c ) {
+  if ( !hasClass( elem, c ) ) {
+    elem.className = elem.className + ' ' + c;
+  }
+};
+removeClass = function( elem, c ) {
+  elem.className = elem.className.replace( classReg( c ), ' ' );
+};
+}
+
+function toggleClass( elem, c ) {
+var fn = hasClass( elem, c ) ? removeClass : addClass;
+fn( elem, c );
+}
+
+var classie = {
+// full names
+hasClass: hasClass,
+addClass: addClass,
+removeClass: removeClass,
+toggleClass: toggleClass,
+// short names
+has: hasClass,
+add: addClass,
+remove: removeClass,
+toggle: toggleClass
+};
+
+// transport
+if ( typeof define === 'function' && define.amd ) {
+// AMD
+define( classie );
+} else {
+// browser global
+window.classie = classie;
+}
+
+})( window );
+// EventListener | @jon_neal | //github.com/jonathantneal/EventListener
+!window.addEventListener && window.Element && (function () {
+  function addToPrototype(name, method) {
+      Window.prototype[name] = HTMLDocument.prototype[name] = Element.prototype[name] = method;
+  }
+
+  var registry = [];
+
+  addToPrototype("addEventListener", function (type, listener) {
+      var target = this;
+
+      registry.unshift({
+          __listener: function (event) {
+              event.currentTarget = target;
+              event.pageX = event.clientX + document.documentElement.scrollLeft;
+              event.pageY = event.clientY + document.documentElement.scrollTop;
+              event.preventDefault = function () { event.returnValue = false };
+              event.relatedTarget = event.fromElement || null;
+              event.stopPropagation = function () { event.cancelBubble = true };
+              event.relatedTarget = event.fromElement || null;
+              event.target = event.srcElement || target;
+              event.timeStamp = +new Date;
+
+              listener.call(target, event);
+          },
+          listener: listener,
+          target: target,
+          type: type
+      });
+
+      this.attachEvent("on" + type, registry[0].__listener);
+  });
+
+  addToPrototype("removeEventListener", function (type, listener) {
+      for (var index = 0, length = registry.length; index < length; ++index) {
+          if (registry[index].target == this && registry[index].type == type && registry[index].listener == listener) {
+              return this.detachEvent("on" + type, registry.splice(index, 1)[0].__listener);
+          }
+      }
+  });
+
+  addToPrototype("dispatchEvent", function (eventObject) {
+      try {
+          return this.fireEvent("on" + eventObject.type, eventObject);
+      } catch (error) {
+          for (var index = 0, length = registry.length; index < length; ++index) {
+              if (registry[index].target == this && registry[index].type == eventObject.type) {
+                  registry[index].call(this, eventObject);
+              }
+          }
+      }
+  });
+})();
+
+ 
+  
+  </script>
