@@ -133,40 +133,6 @@
 </div>
 </section>
 
-
-
-
-
-<section class="sectionSearchbar section-bg sectionSearchbar section-dark sectionHeight">
-    <div class="containerSearchbar text-center">
-        <h1>{{title}}</h1>
-      </div>
-      <div class="containerSearchbar">
-        <div class="row">
-          <div class="search-hero">
-            <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&#61442;  Start searching for a hero by id or name or country">
-          </div>
-          <table class="table table-striped">
-            <thead>
-            <tr>
-              <th>Id</th>
-              <th>Hero Name</th>
-              <th>Country</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr *ngFor="let course of courses | filter:searchText">
-              <td>{{course.id}}</td>
-              <td>{{course.course_name}}</td>
-              <td>{{course.course_desc}}</td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-</section>
-
-
 <!-- ############################################----- SEARCH END ----############################################ -->
 
 
