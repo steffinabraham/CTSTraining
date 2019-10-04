@@ -9,7 +9,9 @@ mentor_router.use(bodyParser.urlencoded({extended: true}))
 let mentor_controller = require('../controllers/mentor_c')
 
 mentor_router.get("/",       mentor_controller.select_all)// Get all users.
-mentor_router.get("/table",  mentor_controller.records_in_table_form)// Get all users & List in HTML Table.
+mentor_router.get("/table",  mentor_controller.records_in_table_form)
+mentor_router.put("/block/:id",    mentor_controller.block1)
+mentor_router.put("/unblock/:id",    mentor_controller.unblock1)// Get all users & List in HTML Table.
 // mentor_router.get("/:id",    mentor_controller.select1_by_id)// Get a selected user.
 // mentor_router.post("/",      mentor_controller.register)// Save an user Record / Save Register Form data.
 // mentor_router.post("/check", mentor_controller.authenticate)// Check valid user or not.

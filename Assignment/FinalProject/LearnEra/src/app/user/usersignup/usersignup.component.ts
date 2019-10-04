@@ -12,6 +12,7 @@ export class UsersignupComponent implements OnInit {
   email_id;
   pass_word;
   message='';
+  status;
 
   constructor(private http: HttpClient) { }
 
@@ -25,7 +26,8 @@ export class UsersignupComponent implements OnInit {
 
     var body = "user_name=" + this.user_name 
         + "&email_id=" + this.email_id 
-        + "&pass_word=" + this.pass_word;
+        + "&pass_word=" + this.pass_word
+        + "&status=" + "active";
 	
     let headers = new HttpHeaders({'Content-Type': 'application/x-www-form-urlencoded'});
 

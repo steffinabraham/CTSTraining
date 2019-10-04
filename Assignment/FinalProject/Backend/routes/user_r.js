@@ -15,5 +15,7 @@ user_router.post("/",      user_controller.register)// Save an user Record / Sav
 user_router.post("/check", user_controller.authenticate)// Check valid user or not.
 user_router.delete("/:id", user_controller.delete1)// Delete an user Record
 user_router.put("/:id",    user_controller.update1)// Delete an user Record
+user_router.put("/block/:id",    user_controller.block1)
+user_router.put("/unblock/:id",    user_controller.unblock1)
 
 module.exports = user_router

@@ -34,7 +34,12 @@ this.http.post("http://localhost:3000/user/check", body,
         // localStorage.setItem('amars_data', JSON.stringify({ name: 'R. Amaranathan', place: 'Valasai', mailid: 'amar@hotmail.com' }));
         if(result == 'Invalid User'){
           this.error_message = "Invalid User"
-        } else {// we will get the JWT token from REST API / Server then we have to store in the Frontend
+        } else if(result=='User Blocked'){
+          alert("Account Blocked! Contact Admin");
+        }
+        
+        
+        else {// we will get the JWT token from REST API / Server then we have to store in the Frontend
           localStorage.setItem('token', result);
           this._router.navigate(['userdash'])               
 

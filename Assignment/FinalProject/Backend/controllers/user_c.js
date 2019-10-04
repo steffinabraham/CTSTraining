@@ -58,6 +58,9 @@ authenticate: async(req, res)=>{// Check valid user or not
         //console.log(users.length)
         //console.log(users)
         if(users.length == 1) {// Found User record for given email_id & pass_word
+            if (users[0].status == "blocked"){
+                res.send("User Blocked")
+            }
             res.send(create_token(req.body.email_id))// Send token to Frontend if a Valid User is Logging in
             //res.send("Valid User")
         } else {
@@ -87,5 +90,34 @@ update1: async(req, res)=>{// Update an user Record
     } catch(err) {
         res.status(500).send(err)
     }
+},
+block1: async (req, res) => {// Update an user Record
+    try {
+        console.log("req.params.id : " + req.params.id)
+        console.log("req.body")
+        console.log(req.body)
+        let filter = { _id: req.params.id };
+        let update = { status: "blocked" };
+        let result = await user_model.findOneAndUpdate(filter, update, { new: true });
+        res.send(result)
+    } catch (err) {
+        res.status(500).send(err)
+    }
+},
+unblock1: async (req, res) => {// Update an user Record
+    try {
+        console.log("req.params.id : " + req.params.id)
+        console.log("req.body")
+        console.log(req.body)
+        let filter = { _id: req.params.id };
+        let update = { status: "active" };
+        let result = await user_model.findOneAndUpdate(filter, update, { new: true });
+        res.send(result)
+    } catch (err) {
+        res.status(500).send(err)
+    }
 }
+
+
+
 }

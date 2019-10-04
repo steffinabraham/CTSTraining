@@ -32,5 +32,32 @@ records_in_table_form: async (req, res)=>{// Get all mentors & List in HTML Tabl
     } catch(err) {
         res.status(500).send(err)
     }
+},
+
+block1: async (req, res) => {// Update an user Record
+    try {
+        console.log("req.params.id : " + req.params.id)
+        console.log("req.body")
+        console.log(req.body)
+        let filter = { _id: req.params.id };
+        let update = { status: "blocked" };
+        let result = await mentor_model.findOneAndUpdate(filter, update, { new: true });
+        res.send(result)
+    } catch (err) {
+        res.status(500).send(err)
+    }
+},
+unblock1: async (req, res) => {// Update an user Record
+    try {
+        console.log("req.params.id : " + req.params.id)
+        console.log("req.body")
+        console.log(req.body)
+        let filter = { _id: req.params.id };
+        let update = { status: "active" };
+        let result = await mentor_model.findOneAndUpdate(filter, update, { new: true });
+        res.send(result)
+    } catch (err) {
+        res.status(500).send(err)
+    }
 }
 }
