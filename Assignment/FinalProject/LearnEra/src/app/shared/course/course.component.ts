@@ -9,6 +9,31 @@ import { HttpClient } from '@angular/common/http';
 export class CourseComponent implements OnInit {
 
     constructor(private http: HttpClient) { }
+
+    cerror_message='';
+    ccourses = [];
+    get_searched_course = function(course_name) {
+      var s = document.getElementById("search_heading");
+      s.style.display = "block";
+      this.http.get("http://localhost:3000/course/"+course_name).subscribe(
+        (result : any[]) => {
+          this.ccourses = result;
+          this.cerror_message = "" 
+        },
+        (error) => {
+          this.cerror_message = "Error occured, check whether Backend is running!";
+          console.log(error)
+        }
+      )
+    }
+
+
+
+
+    
+
+
+
     error_message='';
     courses = [];
     get_course_list = function() {
@@ -41,6 +66,8 @@ export class CourseComponent implements OnInit {
   
     ngOnInit() {
       this.get_course_list();
+    var s = document.getElementById("search_heading");
+    s.style.display = "none";
     }
   
   }

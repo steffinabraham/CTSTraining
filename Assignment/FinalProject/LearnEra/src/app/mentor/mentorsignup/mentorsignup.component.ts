@@ -8,11 +8,11 @@ import { HttpHeaders } from '@angular/common/http';
   styleUrls: ['./mentorsignup.component.css']
 })
 export class MentorsignupComponent implements OnInit {
-
   mentor_name;
   email_id;
   pass_word;
   message='';
+  status;
 
   constructor(private http: HttpClient) { }
 
@@ -26,7 +26,8 @@ export class MentorsignupComponent implements OnInit {
 
     var body = "mentor_name=" + this.mentor_name 
         + "&email_id=" + this.email_id 
-        + "&pass_word=" + this.pass_word;
+        + "&pass_word=" + this.pass_word
+        + "&status=" + "active";
 	
     let headers = new HttpHeaders({'Content-Type': 'application/x-www-form-urlencoded'});
 

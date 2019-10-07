@@ -12,10 +12,10 @@ mentor_router.get("/",       mentor_controller.select_all)// Get all users.
 mentor_router.get("/table",  mentor_controller.records_in_table_form)
 mentor_router.put("/block/:id",    mentor_controller.block1)
 mentor_router.put("/unblock/:id",    mentor_controller.unblock1)// Get all users & List in HTML Table.
-// mentor_router.get("/:id",    mentor_controller.select1_by_id)// Get a selected user.
-// mentor_router.post("/",      mentor_controller.register)// Save an user Record / Save Register Form data.
-// mentor_router.post("/check", mentor_controller.authenticate)// Check valid user or not.
-// mentor_router.delete("/:id", mentor_controller.delete1)// Delete an user Record
-// mentor_router.put("/:id",    mentor_controller.update1)// Delete an user Record
+mentor_router.get("/:id",    mentor_controller.select1_by_id)// Get a selected user.
+mentor_router.post("/",      mentor_controller.register)// Save an user Record / Save Register Form data.
+mentor_router.post("/check", mentor_controller.authenticate)// Check valid user or not.
+mentor_router.delete("/:id", mentor_controller.delete1)// Delete an user Record
+mentor_router.put("/:id",    mentor_controller.update1)// Delete an user Record
 
 module.exports = mentor_router

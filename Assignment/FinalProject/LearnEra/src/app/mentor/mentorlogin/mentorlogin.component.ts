@@ -24,7 +24,8 @@ export class MentorloginComponent implements OnInit {
 
     var body = "email_id=" + this.email_id 
         + "&pass_word=" + this.pass_word;
-        let headers = new HttpHeaders({'Content-Type': 'application/x-www-form-urlencoded'});
+	
+let headers = new HttpHeaders({'Content-Type': 'application/x-www-form-urlencoded'});
 
 this.http.post("http://localhost:3000/mentor/check", body, 
                   {headers: headers, responseType:'text'}).subscribe(
@@ -34,12 +35,17 @@ this.http.post("http://localhost:3000/mentor/check", body,
         // localStorage.setItem('amars_data', JSON.stringify({ name: 'R. Amaranathan', place: 'Valasai', mailid: 'amar@hotmail.com' }));
         if(result == 'Invalid Mentor'){
           this.error_message = "Invalid Mentor"
-        } else {// we will get the JWT token from REST API / Server then we have to store in the Frontend
-          localStorage.setItem('token', result);
-          this._router.navigate(['mentordash'])               
+        } 
+        else if(result=="Mentor blocked"){
+          alert("Mentor blocked")
 
+        }
+        else {// we will get the JWT token from REST API / Server then we have to store in the Frontend
+          localStorage.setItem('token', result);
+          this._router.navigate(['upage'])
           //this.error_message = ""
-          // this.error_message = result
+          //this.error_message = result
+
         }
       },
       (error) => {
