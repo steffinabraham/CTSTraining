@@ -11,6 +11,7 @@ import { AdmindashComponent } from './admin/admindash/admindash.component';
 import { MentordashComponent } from './mentor/mentordash/mentordash.component';
 import { MentorloginComponent } from './mentor/mentorlogin/mentorlogin.component';
 import { MentorsignupComponent } from './mentor/mentorsignup/mentorsignup.component';
+import { AddcourseComponent } from './admin/addcourse/addcourse.component';
 
 
 
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'mentor', component: MentorloginComponent},
   { path: 'mentorsignup', component: MentorsignupComponent},
   { path: 'adminlogin', component: AdminloginComponent},
+  { path: 'addcourse', component: AddcourseComponent}
  
   
 ];
@@ -38,7 +40,7 @@ const routes: Routes = [
 export class AppRoutingModule { }
 export const routingComponents = [NavComponent, HomeComponent, CourseComponent]
 export const userComponents = [UsersignupComponent, UsersigninComponent, UserdashComponent]
-export const adminComponents = [AdminloginComponent, AdmindashComponent]
+export const adminComponents = [AdminloginComponent, AdmindashComponent, AddcourseComponent]
 export const mentorComponents = [MentorsignupComponent, MentorloginComponent, MentordashComponent]
 
  

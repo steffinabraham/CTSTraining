@@ -1,4 +1,4 @@
-body{background: black;}
+body{background: rgb(57, 3, 102);}
 
 .sidebar {
   height: 100%;
@@ -21,11 +21,13 @@ body{background: black;}
   height: auto;
   width: auto;
   /* background-color: rgba(255, 255, 255, 0.89); */
-  background-color:rgba(0, 0, 0, 0.795);
+  background-color:rgba(196, 2, 255, 0.795);
   /* color: white; */
   border-radius: 20px;
 }
-
+.table{
+  width: 50%;
+}
 .text{
   color: white;
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { ActivatedRoute, Router } from '@angular/router';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-admindash',
@@ -7,8 +8,15 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./admindash.component.css']
 })
 export class AdmindashComponent implements OnInit {
+  id:string
+  course_name:string
+  trainer_name:string
+  course_logo:string
+  course_description:string
+  message:string
 
-  constructor(private http: HttpClient) { }
+  constructor(private route: ActivatedRoute, private http: HttpClient,
+    private router: Router) { }
   uerror_message='';
   users = [];
   get_user_list = function() {
@@ -46,6 +54,7 @@ export class AdmindashComponent implements OnInit {
         console.log(this.users)
         this.uerror_message = ""
         alert("User Blocked");
+        this.get_user_list()
         
       },
       (error) => {
@@ -63,6 +72,7 @@ export class AdmindashComponent implements OnInit {
         console.log(this.users)
         this.uerror_message = ""
         alert("User Unblocked");
+        this.get_user_list()
         
       },
       (error) => {
@@ -119,6 +129,7 @@ export class AdmindashComponent implements OnInit {
         console.log(this.mentors)
         this.merror_message = ""
         alert("Mentor Blocked");
+        this.get_mentor_list()
         
       },
       (error) => {
@@ -136,6 +147,7 @@ export class AdmindashComponent implements OnInit {
         console.log(this.mentors)
         this.merror_message = ""
         alert("Mentor Unblocked");
+        this.get_mentor_list()
         
       },
       (error) => {
@@ -191,6 +203,15 @@ export class AdmindashComponent implements OnInit {
     )
   }
 
+
+
+
+
+
+
+
+
+
   meserror_message='';
   messages = [];
   get_message_list = function() {
@@ -206,6 +227,28 @@ export class AdmindashComponent implements OnInit {
       }
     )
   }
+
+
+  delete_message = function(id) {
+    this.http.delete("http://localhost:3000/message/"+id).subscribe(
+      (result) => {
+        
+        this.meserror_message = "Deleted"
+        this.messages = [];
+        this.get_message_list()
+      },
+      (error) => {
+        this.meserror_message = "Error occured, check whether Backend is running!";
+        console.log(error)
+      }
+    )
+  }
+
+
+
+
+
+
 
   usrFunction = function() {
     var u = document.getElementById("usr");
@@ -251,6 +294,33 @@ export class AdmindashComponent implements OnInit {
 
 
 
+  
+  
+  submit_form_data(id:string){
+
+    var body = "course_name=" + this.course_name 
+        + "&trainer_name=" + this.trainer_name 
+        + "&course_logo=" + this.course_logo
+        + "&course_description=" + this.course_description;
+	
+    let headers = new HttpHeaders({'Content-Type': 'application/x-www-form-urlencoded'});
+
+    this.http.put("http://localhost:3000/course/"+id, body, 
+                  {headers: headers, responseType:'text'}).subscribe(
+      (result) => {
+        console.log(result)
+        this.message = "Congratulations, You had successfully Updated"
+      },
+      (error) => {
+        console.log(error)
+        this.message = "Error : Backend is running? or any other error";
+      }
+    )
+  }
+
+
+
+
 
 
   ngOnInit() {
@@ -266,6 +336,8 @@ export class AdmindashComponent implements OnInit {
     m.style.display = "none";
     c.style.display = "none";
     mes.style.display = "none";
+
+  
   } 
 
 }

@@ -18,6 +18,16 @@ select_all: async (req, res)=>{// Get all courses
         res.status(500).send(err)
     }
 },
+register: async(req, res)=>{// Save an user Record
+    try {
+        console.log(req.body)
+        let course   = new course_model(req.body)
+        let result = await course.save()
+        res.send(result)
+    } catch(err) {
+        res.status(500).send(err)
+    }
+},
 records_in_table_form: async (req, res)=>{// Get all courses & List in HTML Table
     try {
         let courses = await course_model.find().exec()

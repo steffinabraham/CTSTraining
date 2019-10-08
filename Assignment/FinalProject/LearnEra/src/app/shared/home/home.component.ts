@@ -11,7 +11,9 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
   email_id;
   pass_word;
-  error_message = ""
+  error_message = "";
+  user_message;
+  message='';
   constructor(private http: HttpClient, private _router : Router) { }
 
   ngOnInit() {
@@ -88,4 +90,29 @@ this.http.post("http://localhost:3000/mentor/check", body,
       }
     )
   }
+
+
+  submit_form_data(){
+    console.log("email_id : " + this.email_id);
+    console.log("user_message : " + this.user_message);
+
+    var body = "email_id=" + this.email_id 
+        + "&user_message=" + this.user_message; 
+	
+    let headers = new HttpHeaders({'Content-Type': 'application/x-www-form-urlencoded'});
+
+    this.http.post("http://localhost:3000/message/", body, 
+                  {headers: headers, responseType:'text'}).subscribe(
+      (result) => {
+        console.log(result)
+        this.message = "Your Message Has Been Sent !";
+      },
+      (error) => {
+        console.log(error)
+        this.message = "Error : Backend is running? or Registered already?";
+        console.log(this.message)
+      }
+    )
+  }
 }
+

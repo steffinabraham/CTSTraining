@@ -9,6 +9,7 @@ import { HomeComponent } from './shared/home/home.component';
 import { NavComponent } from './shared/nav/nav.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +19,8 @@ import { NavComponent } from './shared/nav/nav.component';
     userComponents,
     adminComponents,
     mentorComponents
+    
+
  
 
   ],

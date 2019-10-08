@@ -13,9 +13,11 @@
     <header class="section-header">
       <h2>About Us</h2>
       <br>
-      <p>Learn-Era is a place you can come and gain knowledge</p>
-      <p>with a trainers experienced for more than 20 years</p>
-      <p>and millions of courses</p>
+      <p>Teaching is one of the most challenging and complex jobs on the planet.
+         Our digital resources, tools, and learning materials are developed by educational 
+         experts to incorporate leading pedagogical practices. 
+         They are useful in any type of teaching moment and many can be used to support
+          national education standards</p>
 
     </header>
 
@@ -59,7 +61,7 @@
         <div class="box">
           <div class="icon" style="background: #fff0da;"><i class="ion-ios-bookmarks-outline"
               style="color: #e98e06;"></i></div>
-          <h4 class="title"><a href="">Java</a></h4>
+          <h4 class="title"><a href="https://cdn.freebiesupply.com/logos/thumbs/2x/java-4-logo.png">Java</a></h4>
 
           <p class="description">Machine learning is an application of artificial intelligence (AI)
             that provides systems the ability to automatically learn and improve from experience without being
@@ -142,7 +144,8 @@
 </div> -->
 <!-- ############################################-----LOGIN-----################################################ -->
 
-<div class="pimg1" id="login">
+<div class="pimg1" id="loginscreen" style="min-height:600px;">
+    
     <!-- <div class="loginptext">
         <span class="loginborder">
           Let's Get Started..
@@ -152,29 +155,31 @@
   <table>
     <tr>
       <td>
-        <div class="button">
+        <div class="frontimage">
           <form action="tsignin.html">
-            <input type="image" alt="Trainer" src="/assets/girluser.png" width="50%">
+            <input type="image" alt="Student" src="/assets/girluser.png" width="100%">
           </form>
         </div>
       </td>
       <td>
+          <div class="frontimage">
         <form action="lsignin.html">
-          <input type="image" alt="Student" src="/assets/trainer.png" width="50%">
+          <input type="image" alt="Trainer" src="/assets/trainer.png" width="100%">
         </form>
+      </div>
       </td>
 
 
     </tr>
     <tr>
       <td>
-        <div class="button">
+        <div class="frontbutton">
           <button type="button" class="btn-primary"
             onclick="document.getElementById('id01').style.display='block'">User</button>
         </div>
       </td>
       <td>
-        <div class="button">
+        <div class="frontbutton">
           <button type="button" class="btn-primary"
             onclick="document.getElementById('id02').style.display='block'">Mentor</button>
         </div>
@@ -197,11 +202,11 @@
     
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      <img src="/assets/girluser.png" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
-      <label for="uname"><b>Mentorname</b></label>
+      <label for="uname"><b>USERNAME</b></label>
       <!-- <input type="text" placeholder="Enter Mentorname" name="uname" required> -->
 
       <input type="email" [(ngModel)]="email_id" name="uname" #email_id_ref="ngModel" required placeholder="Enter Email Id">
@@ -223,18 +228,16 @@
         <span *ngIf="pass_word_ref.errors.required" class="error">Password Should not be empty</span>
       </span>
 
-      <button [disabled]="!form1.form.valid" class="btn btn-success" type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
+      <button [disabled]="!form1.form.valid" class="btn btn-success btm" type="submit">Login</button>
+    
     </div>
     <div>
       <h3 class="error">{{error_message}}</h3>
     </div>
-    <div class="container" style="background-color:#f1f1f1">
+   
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
+     
+
   </form>
 </div>
 
@@ -248,7 +251,7 @@
     
     <div class="imgcontainer">
       <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      <img src="/assets/trainer.png" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
@@ -274,18 +277,16 @@
         <span *ngIf="pass_word_ref.errors.required" class="error">Password Should not be empty</span>
       </span>
 
-      <button [disabled]="!form1.form.valid" class="btn btn-success" type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
+      <button [disabled]="!form1.form.valid" class="btn btn-success btm" type="submit">Login</button>
+     
     </div>
     <div>
       <h3 class="error">{{error_message}}</h3>
     </div>
-    <div class="container" style="background-color:#f1f1f1">
+    
       <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
+      
+    
   </form>
 </div>
 
@@ -300,6 +301,7 @@
   // })
   var modal = document.getElementById('id01');
   var modal = document.getElementById('id02');
+  
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function (event) {
     if (event.target == modal) {
@@ -308,4 +310,72 @@
   }
 </script>
 </div>
-<!-- ############################################---------################################################ -->
+<!-- ############################################--CONTACT US--################################################ -->
+<section class="section section-bg section section-dark sectionHeight" id="search">
+    <div class="pimgClouds" style="padding:0px 0px;">
+
+<div style="padding-top: 40px;height: 655px;" id="contactus">
+
+  <div class="d-flex justify-content-center">
+    <h1 style="color: rgb(211, 132, 248)">WE WOULD LOVE TO HEAR FROM YOU</h1>
+  </div>
+
+  <form (ngSubmit)="submit_form_data()" #form1="ngForm">
+    <div style="padding-top: 30px;" class="d-flex justify-content-center">
+      <div class="card2">
+       
+        <div class="card-body">
+          <label style="color: white"><b>Email</b></label>
+          <input type="email" [(ngModel)]="email_id" name="email_id" #email_id2="ngModel" required
+            placeholder="Enter Email" style="height: 50px; width: 100%">
+<br>
+          <label style="color: white"><b>Enter Your Message Here</b></label><br>
+          <input type="text" [(ngModel)]="user_message" name="user_message" #message2="ngModel" required
+            placeholder="Enter Message" style="height: 200px; width: 100%">
+
+          <span *ngIf="email_id2.invalid && (email_id2.dirty || email_id2.touched)" class="red-text">
+            <span *ngIf="email_id2.errors.required">Email should not be empty.</span>
+          </span><br>
+          <span *ngIf="message2.invalid && (message2.dirty || message2.touched)" class="red-text">
+            <span *ngIf="message2.errors.required" style="color: rgb(255, 0, 0)" > Message Should not be Empty</span>
+          </span><br>
+          <div><p class="red-text d-flex justify-content-center">{{message}}</p></div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+    <br>
+
+
+
+
+
+
+
+
+
+    <div class="d-flex justify-content-center">
+      <button [disabled]="!form1.form.valid" class="btn btn-red button1">Send Message</button>
+    </div>
+
+  </form>
+
+
+</div>
+
+
+
+
+    </div>
+  </section>
+
+
+
+
+  

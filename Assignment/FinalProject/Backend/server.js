@@ -60,6 +60,11 @@ app.use('/mentor', mentor_route)// user routes
 
 //---------------------------------------------------------------
 
+//Message Route
+
+const message_route = require('./routes/message_r')
+app.use('/message', message_route)
+
 
 const item_route = require('./routes/item_r')// item routes
 app.use('/item', validate_token, item_route)// item routes
